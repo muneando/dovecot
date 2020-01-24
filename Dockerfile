@@ -13,4 +13,6 @@ RUN apt-get update && apt-get install -y \
 EXPOSE 143 993
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod 775 /entrypoint.sh
+
 ENTRYPOINT ["/entrypoint.sh"]
