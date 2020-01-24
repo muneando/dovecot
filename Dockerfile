@@ -1,4 +1,4 @@
-From debian:unstable-slim
+FROM debian:unstable-slim
 
 RUN apt-get update && apt-get install -y \
     dovecot-core \
