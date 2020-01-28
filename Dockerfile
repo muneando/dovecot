@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
 
 EXPOSE 143 993
 
+RUN mkdir /etc/skel/Maildir 
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 775 /entrypoint.sh
 
