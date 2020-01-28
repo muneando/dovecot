@@ -14,6 +14,9 @@ EXPOSE 143 993
 
 RUN mkdir /etc/skel/Maildir 
 
+ADD dovecot_useradd.sh /dovecot_useradd.sh
+RUN chmod 775 /dovecot_useradd.sh
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod 775 /entrypoint.sh
 
