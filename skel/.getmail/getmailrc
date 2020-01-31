@@ -1,0 +1,10 @@
+[retriever]
+type = SimplePOP3SSLRetriever
+server = MAIL_DOMAIN
+username = USER@MAIL_DOMAIN
+port = 995
+password = MAIL_PASSWORD
+
+[destination]
+type = Maildir
+path = ~/Maildir/

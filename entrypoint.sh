@@ -5,7 +5,7 @@
 set -eu
 
 # ダミーユーザー作成
-/dovecot_useradd.sh ando testtest 
+/dovecot_useradd.sh imap-test
 
 # start services
 echo "Starting services..."

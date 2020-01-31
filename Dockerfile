@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     dovecot-core \
     dovecot-imapd \
     dovecot-ldap \
+    getmail4 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && sed -i -e "s/#disable_plaintext_auth = yes/disable_plaintext_auth = no/" /etc/dovecot/conf.d/10-auth.conf \
@@ -12,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 
 EXPOSE 143 993
 
-RUN mkdir /etc/skel/Maildir 
+COPY skel/ /etc/skel/
 
 ADD dovecot_useradd.sh /dovecot_useradd.sh
 RUN chmod 775 /dovecot_useradd.sh
