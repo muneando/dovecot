@@ -8,3 +8,6 @@ password = MAIL_PASSWORD
 [destination]
 type = Maildir
 path = ~/Maildir/
+
+[options]
+read_all = False
