@@ -1,0 +1,6 @@
+# /etc/cron.d/getmail
+SHELL=/bin/sh
+MAILTO=””
+
+# m h dom mon dow user  command
+*/5 *  *   *   * root  /cron-getmail.sh
