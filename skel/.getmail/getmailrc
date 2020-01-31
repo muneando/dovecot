@@ -2,7 +2,7 @@
 type = SimplePOP3SSLRetriever
 server = MAIL_DOMAIN
 username = USER@MAIL_DOMAIN
-port = 995
+port = MAIL_POP_PORT
 password = MAIL_PASSWORD
 
 [destination]
