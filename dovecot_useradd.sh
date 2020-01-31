@@ -17,4 +17,6 @@ sed -i -e "s/USER/$1/" /home/$1/.getmail/getmailrc
 sed -i -e "s/MAIL_DOMAIN/$MAIL_DOMAIN/" /home/$1/.getmail/getmailrc
 sed -i -e "s/MAIL_PASSWORD/$MAIL_PASSWORD/" /home/$1/.getmail/getmailrc
 
+chmod 0700 /home/$1/.getmail/getmailrc
+
 exit 0
